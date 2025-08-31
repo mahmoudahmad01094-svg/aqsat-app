@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجالات البرمجة</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 30px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+        
+        .header h1 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            width: 100%;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 120px;
+            transition: all 0.2s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card h2 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            text-align: center;
+            margin: 0;
+        }
+        
+        /* ألوان مختلفة لكل بطاقة */
+        .card:nth-child(1) { border-top: 4px solid #3498db; }
+        .card:nth-child(2) { border-top: 4px solid #2ecc71; }
+        .card:nth-child(3) { border-top: 4px solid #e74c3c; }
+        .card:nth-child(4) { border-top: 4px solid #f39c12; }
+        .card:nth-child(5) { border-top: 4px solid #9b59b6; }
+        .card:nth-child(6) { border-top: 4px solid #1abc9c; }
+        .card:nth-child(7) { border-top: 4px solid #d35400; }
+        .card:nth-child(8) { border-top: 4px solid #34495e; }
+        
+        .footer {
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>مجالات البرمجة</h1>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>تطوير التطبيقات</h2>
+            </div>
+            
+            <div class="card">
+                <h2>برمجة الويب</h2>
+            </div>
+            
+            <div class="card">
+                <h2>علم البيانات</h2>
+            </div>
+            
+            <div class="card">
+                <h2>الذكاء الاصطناعي</h2>
+            </div>
+            
+            <div class="card">
+                <h2>إنترنت الأشياء</h2>
+            </div>
+            
+            <div class="card">
+                <h2>الأمن السيبراني</h2>
+            </div>
+            
+            <div class="card">
+                <h2>الواقع الافتراضي والمعزز</h2>
+            </div>
+            
+            <div class="card">
+                <h2>تطوير البرمجيات</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2023 مجالات البرمجة</p>
+    </div>
+</body>
+</html>
